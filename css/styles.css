@@ -200,7 +200,8 @@ section {
   background: rgba(5, 5, 5, 0.88);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  transition: border-color 0.3s ease, background 0.3s ease;
+  box-shadow: 0 8px 24px -6px rgba(255, 255, 255, 0.08), 0 1px 0 rgba(255, 255, 255, 0.04);
+  transition: border-color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
 }
 
 @media (min-width: 900px) {
