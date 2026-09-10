@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Hammer Media</title>
+  <meta name="description" content="Get in touch with Hammer Media to book a free marketing consult." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">HM</span>
+        Hammer Media
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="contact.html" class="btn btn-ghost">Start a project</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+        <div class="eyebrow">Get in touch</div>
+        <h1>Let's build your growth plan.</h1>
+        <p>Tell us about your business and goals — we'll follow up within one business day with next steps.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container contact-grid">
+
+        <div class="reveal">
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Full name</label>
+                <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="jane@company.com" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company" placeholder="Company name" />
+              </div>
+              <div class="form-field">
+                <label for="budget">Monthly budget</label>
+                <select id="budget" name="budget">
+                  <option value="">Select a range</option>
+                  <option value="under-2500">Under $2,500</option>
+                  <option value="2500-6000">$2,500 – $6,000</option>
+                  <option value="6000-15000">$6,000 – $15,000</option>
+                  <option value="15000+">$15,000+</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="services">Services you're interested in</label>
+              <select id="services" name="services">
+                <option value="">Select a service</option>
+                <option value="seo">SEO &amp; Content</option>
+                <option value="paid">Paid Media</option>
+                <option value="brand">Brand &amp; Design</option>
+                <option value="social">Social Media</option>
+                <option value="email">Email &amp; CRM</option>
+                <option value="analytics">Analytics &amp; CRO</option>
+                <option value="full-service">Full-service / not sure yet</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="message">Tell us about your goals</label>
+              <textarea id="message" name="message" placeholder="What are you hoping to achieve in the next 6-12 months?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Send message</button>
+            <p class="form-note">By submitting, you agree to be contacted about your inquiry. We never share your information with third parties.</p>
+          </form>
+
+          <div id="form-success" class="form-success">
+            <div class="icon">✓</div>
+            <h3>Thanks — message received.</h3>
+            <p>We'll follow up within one business day. In the meantime, feel free to browse our <a href="work.html" style="color: var(--color-accent-2);">recent case studies</a>.</p>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="contact-info-item">
+            <div class="card-icon">✉</div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:hello@hammermedia.co">hello@hammermedia.co</a></p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="card-icon">☎</div>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:+15555550123">(555) 555-0123</a></p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="card-icon">⌂</div>
+            <div>
+              <h4>Studio</h4>
+              <p>412 Congress Ave, Suite 300<br />Austin, TX 78701</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="card-icon">◷</div>
+            <div>
+              <h4>Hours</h4>
+              <p>Monday – Friday, 9am – 6pm CT</p>
+            </div>
+          </div>
+
+          <div class="hero-card" style="margin-top: 32px;">
+            <h3 style="margin-bottom: 8px; font-size: 17px;">Prefer to talk it through?</h3>
+            <p style="font-size: 14px; margin-bottom: 20px;">Book a free 30-minute consult directly on our calendar — no forms required.</p>
+            <a href="mailto:hello@hammermedia.co?subject=Free%20Consult%20Request" class="btn btn-ghost btn-block">Book a free consult</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="brand">
+            <span class="brand-mark">HM</span>
+            Hammer Media
+          </a>
+          <p>A full-service marketing agency helping ambitious brands grow through strategy, content, media, and design.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="X / Twitter">X</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#seo">SEO &amp; Content</a></li>
+            <li><a href="services.html#paid">Paid Media</a></li>
+            <li><a href="services.html#brand">Brand &amp; Design</a></li>
+            <li><a href="services.html#email">Email &amp; CRM</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:hello@hammermedia.co">hello@hammermedia.co</a></li>
+            <li><a href="tel:+15555550123">(555) 555-0123</a></li>
+            <li>Austin, TX</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Hammer Media. All rights reserved.</span>
+        <span>Privacy Policy · Terms of Service</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
