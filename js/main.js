@@ -15,47 +15,15 @@ function initSmoothScroll() {
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const finePointer = window.matchMedia("(pointer: fine)").matches;
   if (reduceMotion || !finePointer) return;
+  if (typeof Lenis === "undefined") return;
 
-  const ease = 0.09;
-  let current = window.scrollY;
-  let target = window.scrollY;
-  let animating = false;
-
-  function maxScroll() {
-    return document.documentElement.scrollHeight - window.innerHeight;
-  }
-
-  function onWheel(e) {
-    target = Math.max(0, Math.min(target + e.deltaY, maxScroll()));
-    e.preventDefault();
-    if (!animating) {
-      animating = true;
-      requestAnimationFrame(step);
-    }
-  }
-
-  function step() {
-    current += (target - current) * ease;
-    if (Math.abs(target - current) < 0.5) {
-      current = target;
-      window.scrollTo(0, current);
-      animating = false;
-      return;
-    }
-    window.scrollTo(0, current);
-    requestAnimationFrame(step);
-  }
-
-  function syncFromNativeScroll() {
-    if (animating) return;
-    current = window.scrollY;
-    target = window.scrollY;
-  }
-
-  window.addEventListener("wheel", onWheel, { passive: false });
-  window.addEventListener("scroll", syncFromNativeScroll, { passive: true });
-  window.addEventListener("resize", () => {
-    target = Math.max(0, Math.min(target, maxScroll()));
+  new Lenis({
+    duration: 1.15,
+    easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
+    smoothWheel: true,
+    wheelMultiplier: 1,
+    touchMultiplier: 1.5,
+    autoRaf: true,
   });
 }
 
