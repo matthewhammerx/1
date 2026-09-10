@@ -1452,7 +1452,7 @@ section {
   text-align: center;
   background:
     radial-gradient(ellipse 80% 60% at 50% 20%, rgba(255, 255, 255, 0.08), transparent 60%),
-    linear-gradient(180deg, #131313 0%, #050505 65%, #000 100%);
+    linear-gradient(180deg, #131313 0%, #050505 55%, rgba(5, 5, 5, 0) 100%);
 }
 
 .real-hero::before {
@@ -1489,8 +1489,8 @@ section {
   max-width: none;
   opacity: 0.16;
   pointer-events: none;
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, transparent 54%, black 64%, black 88%, transparent 100%);
-  mask-image: linear-gradient(to bottom, transparent 0%, transparent 54%, black 64%, black 88%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, transparent 28%, black 55%, black 85%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, transparent 28%, black 55%, black 85%, transparent 100%);
 }
 
 .real-hero .container {
