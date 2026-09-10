@@ -222,14 +222,25 @@ section {
 .brand {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-family: var(--font-serif);
-  font-weight: 500;
-  font-size: 15px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  gap: 9px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: -0.01em;
   color: var(--color-text);
   flex-shrink: 0;
+}
+
+.brand-icon {
+  height: 24px;
+  width: 24px;
+  border-radius: 5px;
+  display: block;
+}
+
+.footer-brand .brand-icon {
+  height: 28px;
+  width: 28px;
 }
 
 .nav-links {
@@ -1420,14 +1431,15 @@ section {
 .world-dots {
   position: absolute;
   left: 50%;
-  top: 54%;
-  transform: translate(-50%, -50%);
-  width: min(1200px, 130%);
+  bottom: -6%;
+  top: auto;
+  transform: translateX(-50%);
+  width: min(1400px, 150%);
   max-width: none;
   opacity: 0.16;
   pointer-events: none;
-  -webkit-mask-image: radial-gradient(ellipse 60% 55% at 50% 50%, black 30%, transparent 78%);
-  mask-image: radial-gradient(ellipse 60% 55% at 50% 50%, black 30%, transparent 78%);
+  -webkit-mask-image: linear-gradient(to top, black 0%, black 8%, transparent 28%);
+  mask-image: linear-gradient(to top, black 0%, black 8%, transparent 28%);
 }
 
 .real-hero .container {
