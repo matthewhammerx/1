@@ -8,24 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initWorkFilters();
   initContactForm();
   initFooterYear();
-  initSmoothScroll();
 });
-
-function initSmoothScroll() {
-  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const finePointer = window.matchMedia("(pointer: fine)").matches;
-  if (reduceMotion || !finePointer) return;
-  if (typeof Lenis === "undefined") return;
-
-  new Lenis({
-    duration: 1.15,
-    easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
-    smoothWheel: true,
-    wheelMultiplier: 1,
-    touchMultiplier: 1.5,
-    autoRaf: true,
-  });
-}
 
 function initNavToggle() {
   const toggle = document.querySelector(".nav-toggle");
