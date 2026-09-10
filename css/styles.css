@@ -1523,10 +1523,6 @@ section {
   animation: marquee-scroll 34s linear infinite;
 }
 
-.brand-marquee-wrap:hover .brand-marquee-track {
-  animation-play-state: paused;
-}
-
 @media (prefers-reduced-motion: reduce) {
   .brand-marquee-track {
     animation: none;
@@ -1730,10 +1726,6 @@ section {
   gap: 24px;
   width: max-content;
   animation: marquee-scroll 50s linear infinite;
-}
-
-.accolade-strip:hover .accolade-track {
-  animation-play-state: paused;
 }
 
 @media (prefers-reduced-motion: reduce) {
