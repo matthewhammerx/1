@@ -252,7 +252,7 @@ section {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  font-size: 12.5px;
+  font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.04em;
   color: var(--color-text-faint);
@@ -1468,18 +1468,29 @@ section {
   );
 }
 
+.hero-work-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-work-wrap > section {
+  position: relative;
+  z-index: 1;
+}
+
 .world-dots {
   position: absolute;
+  z-index: 0;
   left: 50%;
-  bottom: -6%;
+  bottom: 0;
   top: auto;
   transform: translateX(-50%);
   width: min(1400px, 150%);
   max-width: none;
   opacity: 0.16;
   pointer-events: none;
-  -webkit-mask-image: linear-gradient(to top, black 0%, black 8%, transparent 28%);
-  mask-image: linear-gradient(to top, black 0%, black 8%, transparent 28%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, transparent 54%, black 64%, black 88%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, transparent 54%, black 64%, black 88%, transparent 100%);
 }
 
 .real-hero .container {
