@@ -1417,20 +1417,17 @@ section {
   );
 }
 
-.real-hero::after {
-  content: "";
+.world-dots {
   position: absolute;
-  inset: 0;
-  background-image: repeating-radial-gradient(
-    circle at 50% 118%,
-    rgba(255, 255, 255, 0.14) 0px,
-    rgba(255, 255, 255, 0.14) 1px,
-    transparent 1px,
-    transparent 54px
-  );
-  -webkit-mask-image: radial-gradient(circle at 50% 118%, black 0%, black 38%, transparent 72%);
-  mask-image: radial-gradient(circle at 50% 118%, black 0%, black 38%, transparent 72%);
+  left: 50%;
+  top: 54%;
+  transform: translate(-50%, -50%);
+  width: min(1200px, 130%);
+  max-width: none;
+  opacity: 0.16;
   pointer-events: none;
+  -webkit-mask-image: radial-gradient(ellipse 60% 55% at 50% 50%, black 30%, transparent 78%);
+  mask-image: radial-gradient(ellipse 60% 55% at 50% 50%, black 30%, transparent 78%);
 }
 
 .real-hero .container {
