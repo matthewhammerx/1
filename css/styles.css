@@ -222,25 +222,18 @@ section {
 .brand {
   display: flex;
   align-items: center;
-  gap: 9px;
-  font-family: var(--font-body);
-  font-weight: 700;
-  font-size: 17px;
-  letter-spacing: -0.01em;
   color: var(--color-text);
   flex-shrink: 0;
 }
 
-.brand-icon {
-  height: 24px;
-  width: 24px;
-  border-radius: 5px;
+.brand-logo {
+  height: 26px;
+  width: auto;
   display: block;
 }
 
-.footer-brand .brand-icon {
-  height: 28px;
-  width: 28px;
+.footer-brand .brand-logo {
+  height: 30px;
 }
 
 .nav-links {
