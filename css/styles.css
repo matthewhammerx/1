@@ -1779,6 +1779,66 @@ section {
   font-weight: 600;
 }
 
+/* ---------- inside grid (top-labeled image tiles) ---------- */
+
+.inside-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 720px) {
+  .inside-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.inside-card {
+  position: relative;
+  aspect-ratio: 3 / 2;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  background: linear-gradient(155deg, var(--inside-tone, #1e1e1e), #0a0a0a 70%);
+}
+
+.inside-text {
+  position: absolute;
+  inset-inline: 0;
+  top: 32px;
+  padding: 0 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.inside-text h3 {
+  font-family: var(--font-name);
+  font-weight: 400;
+  font-size: 22px;
+  color: #fff;
+  margin: 0;
+}
+
+.inside-text p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 320px;
+}
+
+/* ---------- hero button row ---------- */
+
+.hero-btn-row {
+  position: relative;
+  margin-top: 32px;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 /* ---------- closing CTA ---------- */
 
 .exclusive-cta {
