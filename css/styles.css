@@ -1417,6 +1417,22 @@ section {
   );
 }
 
+.real-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: repeating-radial-gradient(
+    circle at 50% 118%,
+    rgba(255, 255, 255, 0.14) 0px,
+    rgba(255, 255, 255, 0.14) 1px,
+    transparent 1px,
+    transparent 54px
+  );
+  -webkit-mask-image: radial-gradient(circle at 50% 118%, black 0%, black 38%, transparent 72%);
+  mask-image: radial-gradient(circle at 50% 118%, black 0%, black 38%, transparent 72%);
+  pointer-events: none;
+}
+
 .real-hero .container {
   position: relative;
   max-width: 760px;
