@@ -233,13 +233,13 @@ section {
 }
 
 .brand-logo {
-  height: 17px;
+  height: 20px;
   width: auto;
   display: block;
 }
 
 .footer-brand .brand-logo {
-  height: 20px;
+  height: 23px;
 }
 
 .nav-links {
@@ -303,6 +303,11 @@ section {
 }
 
 @media (max-width: 900px) {
+  .site-header {
+    width: fit-content;
+    max-width: calc(100% - 24px);
+  }
+
   .nav-cta .btn-ghost {
     display: none;
   }
