@@ -155,12 +155,10 @@ section {
   color: var(--color-text-faint);
 }
 
-.section-tag .script-label {
+.script-word {
   font-family: var(--font-script);
-  font-size: 30px;
   font-weight: 600;
   color: var(--color-accent);
-  line-height: 1;
 }
 
 .section-head p {
