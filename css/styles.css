@@ -21,6 +21,7 @@
   --font-name: "Outfit", system-ui, -apple-system, sans-serif;
   --font-serif: "Cinzel", "Iowan Old Style", "Palatino Linotype", serif;
   --font-body: "Inter", system-ui, -apple-system, sans-serif;
+  --font-script: "Caveat", cursive;
 
   --container: 1180px;
   --radius-sm: 6px;
@@ -134,6 +135,32 @@ section {
 
 .section-head.center .eyebrow {
   justify-content: center;
+}
+
+/* ---------- section tag (numbered label + script accent) ---------- */
+
+.section-tag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.section-tag .section-num {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--color-text-faint);
+}
+
+.section-tag .script-label {
+  font-family: var(--font-script);
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--color-accent);
+  line-height: 1;
 }
 
 .section-head p {
