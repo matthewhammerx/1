@@ -158,7 +158,7 @@ section {
 .script-word {
   font-family: var(--font-script);
   font-weight: 600;
-  color: inherit;
+  color: var(--color-accent);
   font-size: 1.35em;
 }
 
