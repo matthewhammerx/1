@@ -303,12 +303,6 @@ section {
 }
 
 @media (max-width: 900px) {
-  .site-header {
-    width: fit-content;
-    min-width: 220px;
-    max-width: calc(100% - 24px);
-  }
-
   .nav-cta .btn-ghost {
     display: none;
   }
