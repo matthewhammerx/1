@@ -340,7 +340,7 @@ section {
     padding: 17px 0;
     width: 100%;
     font-size: 14px;
-    border-bottom: 1px solid var(--color-border-soft);
+    border-bottom: 1px solid var(--color-border);
   }
 
   .nav-links a:last-child {
