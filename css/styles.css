@@ -158,7 +158,7 @@ section {
 .script-word {
   font-family: var(--font-script);
   font-weight: 600;
-  color: var(--color-accent);
+  color: inherit;
 }
 
 .section-head p {
