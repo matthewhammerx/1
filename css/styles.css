@@ -159,6 +159,7 @@ section {
   font-family: var(--font-script);
   font-weight: 600;
   color: inherit;
+  font-size: 1.35em;
 }
 
 .section-head p {
